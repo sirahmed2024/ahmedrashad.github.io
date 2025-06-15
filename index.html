@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" dir="ltr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmed Rashad Fathy | Portfolio</title>
     
+    <script src="https://cdn.tailwindcss.com"></script>
     
-    
-<script src="https://cdn.tailwindcss.com"></script>
-    
-    
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-        /* Custom styles to apply the Inter font */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #111827; /* A dark blue-gray */
+            background-color: #111827;
         }
-        /* Style for fade-in animation */
+        html[lang="ar"] body {
+            font-family: 'Cairo', sans-serif;
+        }
         .fade-in-section {
             opacity: 0;
             transform: translateY(20px);
@@ -33,187 +30,269 @@
         }
         .tech-tag {
             display: inline-block;
-            background-color: #374151; /* Gray-600 */
-            color: #D1D5DB; /* Gray-300 */
+            background-color: #374151;
+            color: #D1D5DB;
             padding: 4px 12px;
-            border-radius: 9999px; /* pill shape */
+            border-radius: 9999px;
             font-size: 0.8rem;
             font-weight: 500;
             margin: 4px;
             transition: all 0.2s ease-in-out;
         }
         .tech-tag:hover {
-            background-color: #0d9488; /* Teal-600 */
+            background-color: #0d9488;
             color: #ffffff;
+        }
+        /* Language switcher styles */
+        .lang-switcher button.active {
+            color: #14b8a6; /* teal-500 */
+            font-weight: 700;
         }
     </style>
 </head>
 <body class="text-gray-200 antialiased">
 
-    
-    
-<div class="container mx-auto max-w-5xl px-6 py-12 md:py-20">
+    <div class="container mx-auto max-w-5xl px-6 py-12 md:py-20">
 
-        
-        
-<header class="flex flex-col md:flex-row items-start md:items-center justify-between mb-16 md:mb-24">
+        <header id="main-header" class="flex flex-col md:flex-row items-start md:items-center justify-between mb-16 md:mb-24">
             <div>
-                <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Ahmed Rashad Fathy</h1>
-                <h2 class="mt-2 text-xl md:text-2xl font-medium text-teal-400">Aspiring Data Scientist</h2>
-                <p class="mt-4 text-gray-400 max-w-lg">Based in Alexandria, Egypt. Passionate about building solutions with data and code.</p>
+                <h1 data-translate="name" class="text-4xl md:text-5xl font-bold text-white tracking-tight">Ahmed Rashad Fathy</h1>
+                <h2 data-translate="title" class="mt-2 text-xl md:text-2xl font-medium text-teal-400">Data Engineer</h2>
+                <p data-translate="location" class="mt-4 text-gray-400 max-w-lg">Based in Alexandria, Egypt. Engineering intelligent solutions with data and code.</p>
             </div>
-            <div class="flex space-x-4 mt-6 md:mt-0">
-                
-                
-<a href="#" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4 -4.3-2.5 -6-3m12 5v-3.5c0-1 .1-1.4 -.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0c-2.4-1.6-3.5-1.3-3.5-1.3a4.2 4.2 0 0 0-.1 3.2a4.6 4.6 0 0 0-1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6.5-.6 1.2-.5 2V21"/></svg>
-                </a>
-                <a href="#" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300">
-                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                </a>
-                <a href="mailto:ahmedrashad1412@gmail.com" class="text-gray-400 hover:text-teal-400 transition-colors duration-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                </a>
+            <div class="flex items-center gap-6 mt-6 md:mt-0">
+                 <div class="lang-switcher text-gray-400 font-medium flex items-center gap-2">
+                    <button id="lang-en" class="hover:text-white transition-colors active">EN</button>
+                    <span>/</span>
+                    <button id="lang-ar" class="hover:text-white transition-colors">AR</button>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="https://github.com/ahmedrashad" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300" aria-label="GitHub Profile">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4 -4.3-2.5 -6-3m12 5v-3.5c0-1 .1-1.4 -.5-2c2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2a4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0c-2.4-1.6-3.5-1.3-3.5-1.3a4.2 4.2 0 0 0-.1 3.2a4.6 4.6 0 0 0-1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6.5-.6 1.2-.5 2V21"/></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/ahmed-rashad-fathy" target="_blank" class="text-gray-400 hover:text-teal-400 transition-colors duration-300" aria-label="LinkedIn Profile">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:ahmedrashad1412@gmail.com" class="text-gray-400 hover:text-teal-400 transition-colors duration-300" aria-label="Email Me">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
             </div>
         </header>
 
         <main>
-            
-            
-<section id="about" class="mb-16 md:mb-24 fade-in-section">
-                <h3 class="text-lg font-semibold uppercase tracking-wider text-teal-400 mb-4">About</h3>
-                <p class="text-gray-300 leading-relaxed">
-                    Detail-oriented and motivated Data Science undergraduate at Alexandria University with hands-on experience in the complete data lifecycle, from web scraping and database management to in-depth analysis and visualization. Proven ability to develop practical applications using Python, SQL, and NoSQL databases. Seeking to leverage skills in data engineering, machine learning, and cloud computing to solve complex problems and contribute to a forward-thinking team.
+            <section id="about" class="mb-16 md:mb-24 fade-in-section">
+                <h3 data-translate="about_heading" class="text-lg font-semibold uppercase tracking-wider text-teal-400 mb-4">About Me</h3>
+                <p data-translate="about_p" class="text-gray-300 leading-relaxed">
+                    A detail-oriented Data Science undergraduate from Alexandria University, I possess hands-on experience across the entire data lifecycle—from web scraping and database management to in-depth analysis and compelling visualization. With a proven ability to develop robust applications using Python, SQL, and NoSQL, I am passionate about leveraging data engineering, machine learning, and cloud computing to solve complex challenges and drive innovation within a forward-thinking team.
                 </p>
             </section>
             
-            
-            
-<section id="skills" class="mb-16 md:mb-24 fade-in-section">
-                <h3 class="text-lg font-semibold uppercase tracking-wider text-teal-400 mb-6">Technical Skills</h3>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6">
+            <section id="soft-skills" class="mb-16 md:mb-24 fade-in-section">
+                <h3 data-translate="soft_skills_heading" class="text-lg font-semibold uppercase tracking-wider text-teal-400 mb-6">Personal & Professional Skills</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div>
-                        <h4 class="font-bold text-white mb-2">Languages</h4>
-                        <ul class="text-gray-400 space-y-1"><li>Python</li><li>Java</li><li>R</li><li>SQL</li></ul>
+                        <h4 data-translate="soft_skills_subheading" class="font-bold text-white mb-2">Soft Skills</h4>
+                        <ul class="text-gray-400 space-y-1">
+                            <li data-translate="ss_1">Problem-Solving</li>
+                            <li data-translate="ss_2">Teamwork & Collaboration</li>
+                            <li data-translate="ss_3">Effective Communication</li>
+                            <li data-translate="ss_4">Adaptability</li>
+                        </ul>
                     </div>
-                     <div>
-                        <h4 class="font-bold text-white mb-2">Databases</h4>
-                        <ul class="text-gray-400 space-y-1"><li>SQL (PostgreSQL, MySQL)</li><li>NoSQL (MongoDB)</li></ul>
-                    </div>
-                     <div>
-                        <h4 class="font-bold text-white mb-2">Data Science</h4>
-                        <ul class="text-gray-400 space-y-1"><li>RFM Analysis</li><li>Data Cleaning</li><li>Data Visualization</li><li>Web Scraping</li></ul>
-                    </div>
-                     <div>
-                        <h4 class="font-bold text-white mb-2">Dev & Tools</h4>
-                        <ul class="text-gray-400 space-y-1"><li>Git & GitHub</li><li>AWS</li><li>Jupyter Notebook</li><li>VS Code</li></ul>
+                    <div>
+                        <h4 data-translate="languages_subheading" class="font-bold text-white mb-2">Languages</h4>
+                        <ul class="text-gray-400 space-y-1">
+                            <li data-translate="lang_1">Arabic (Native)</li>
+                            <li data-translate="lang_2">English (Professional)</li>
+                        </ul>
                     </div>
                 </div>
             </section>
+            
+            <section id="skills" class="mb-16 md:mb-24 fade-in-section">
+                <h3 data-translate="skills_heading" class="text-lg font-semibold uppercase tracking-wider text-teal-400 mb-6">Technical Skills</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6">
+                    <div><h4 data-translate="skills_lang" class="font-bold text-white mb-2">Languages</h4><ul class="text-gray-400 space-y-1"><li>Python</li><li>Java</li><li>R</li><li>SQL</li></ul></div>
+                    <div><h4 data-translate="skills_db" class="font-bold text-white mb-2">Databases</h4><ul class="text-gray-400 space-y-1"><li>SQL (PostgreSQL, MySQL)</li><li>NoSQL (MongoDB)</li></ul></div>
+                    <div><h4 data-translate="skills_ds" class="font-bold text-white mb-2">Data Science</h4><ul class="text-gray-400 space-y-1"><li>RFM Analysis</li><li>Data Cleaning</li><li>Data Visualization</li><li>Web Scraping</li></ul></div>
+                    <div><h4 data-translate="skills_tools" class="font-bold text-white mb-2">Dev & Tools</h4><ul class="text-gray-400 space-y-1"><li>Git & GitHub</li><li>AWS</li><li>Jupyter Notebook</li><li>VS Code</li></ul></div>
+                </div>
+            </section>
 
-            
-            
-<section id="projects" class="mb-16 md:mb-24 fade-in-section">
-                <h3 class="text-lg font-semibold uppercase tracking-wider text-teal-400 mb-6">Projects</h3>
+            <section id="projects" class="mb-16 md:mb-24 fade-in-section">
+                <h3 data-translate="projects_heading" class="text-lg font-semibold uppercase tracking-wider text-teal-400 mb-6">Projects</h3>
                 <div class="space-y-12">
-                    
-                    
-                    
-<div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
-                        <h4 class="font-bold text-lg text-white">Comprehensive Data Analysis and Machine Learning Showcase</h4>
-                        <p class="mt-2 text-gray-400">A multifaceted project demonstrating skills in financial analysis, predictive healthcare modeling, and natural language processing. This showcase includes a financial stock market analysis with data cleaning and visualization; a K-Nearest Neighbors (KNN) model to predict breast cancer diagnosis with model evaluation; and a movie review sentiment analysis model using TF-IDF, deployed with a Gradio interface.</p>
-                        <div class="mt-4">
-                            <span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">Seaborn</span><span class="tech-tag">NLTK</span><span class="tech-tag">Gradio</span>
-                        </div>
+                    <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
+                        <h4 data-translate="proj1_title" class="font-bold text-lg text-white">Comprehensive Data Analysis and Machine Learning Showcase</h4>
+                        <p data-translate="proj1_desc" class="mt-2 text-gray-400">A multifaceted project demonstrating expertise in financial analysis, predictive healthcare modeling, and NLP. This showcase features a stock market analysis pipeline, a K-Nearest Neighbors model for breast cancer prediction, and a sentiment analysis model for movie reviews, all showcasing end-to-end data science capabilities.</p>
+                        <div class="mt-4"><span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">Scikit-learn</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">Seaborn</span><span class="tech-tag">NLTK</span><span class="tech-tag">Gradio</span></div>
                     </div>
-
-                    
-                    
-
-                    
-                    
-                    
-<div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
-                        <h4 class="font-bold text-lg text-white">Financial Stock Analysis & Visualization Pipeline</h4>
-                        <p class="mt-2 text-gray-400">Built an automated data pipeline to scrape real-time financial stock data. Performed data cleaning, transformation, and in-depth analysis to identify trends, and stored the processed data in a MongoDB database.</p>
-                        <div class="mt-4">
-                           <span class="tech-tag">Python</span><span class="tech-tag">Scrapy</span><span class="tech-tag">Pandas</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">MongoDB</span>
-                        </div>
+                    <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
+                        <h4 data-translate="proj2_title" class="font-bold text-lg text-white">Cloud-Based File Sharing Application</h4>
+                        <p data-translate="proj2_desc" class="mt-2 text-gray-400">Engineered a secure, scalable file sharing and storage application on Amazon Web Services (AWS). The backend, built to manage user authentication, file transfers, and cloud storage, demonstrates a strong command of cloud architecture and security principles.</p>
+                        <div class="mt-4"><span class="tech-tag">AWS</span><span class="tech-tag">S3</span><span class="tech-tag">EC2</span><span class="tech-tag">Python</span></div>
                     </div>
-
-                    
-
-
-                    
-<div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
-                        <h4 class="font-bold text-lg text-white">University Management System with GUI</h4>
-                        <p class="mt-2 text-gray-400">Designed and implemented a comprehensive database system to manage university records. Developed an intuitive Graphical User Interface (GUI) in Python, allowing for easy data entry, querying, and management.</p>
-                        <div class="mt-4">
-                           <span class="tech-tag">Python</span><span class="tech-tag">Tkinter/PyQt</span><span class="tech-tag">SQL</span>
-                        </div>
+                    <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
+                        <h4 data-translate="proj3_title" class="font-bold text-lg text-white">Financial Stock Analysis & Visualization Pipeline</h4>
+                        <p data-translate="proj3_desc" class="mt-2 text-gray-400">Constructed an automated data pipeline to scrape real-time financial stock data. The project involved data cleaning, transformation, and in-depth analysis to uncover market trends, with the processed data stored efficiently in a MongoDB database.</p>
+                        <div class="mt-4"><span class="tech-tag">Python</span><span class="tech-tag">Scrapy</span><span class="tech-tag">Pandas</span><span class="tech-tag">Matplotlib</span><span class="tech-tag">MongoDB</span></div>
                     </div>
-                    
-                    
-                    
-<div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
-                        <h4 class="font-bold text-lg text-white">Customer Segmentation using RFM Analysis</h4>
-                        <p class="mt-2 text-gray-400">Analyzed a large transactional dataset to segment customers based on Recency, Frequency, and Monetary (RFM) value, providing actionable insights for targeted marketing strategies.</p>
-                        <div class="mt-4">
-                           <span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">Jupyter</span>
-                        </div>
+                    <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
+                        <h4 data-translate="proj4_title" class="font-bold text-lg text-white">University Management System with GUI</h4>
+                        <p data-translate="proj4_desc" class="mt-2 text-gray-400">Designed and implemented a comprehensive database system to manage university records. The system features an intuitive Graphical User Interface (GUI) developed in Python, facilitating seamless data entry, querying, and system management.</p>
+                        <div class="mt-4"><span class="tech-tag">Python</span><span class="tech-tag">Tkinter/PyQt</span><span class="tech-tag">SQL</span></div>
                     </div>
-                    
-            
-                    
-<div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
-                        <h4 class="font-bold text-lg text-white">University Exam Scheduling via Graph Coloring</h4>
-                        <p class="mt-2 text-gray-400">Solved a complex course scheduling problem by modeling student enrollment data as a graph to identify exam conflicts. Applied and benchmarked various graph coloring algorithms (e.g., largest-first, smallest-last) to determine the chromatic number, successfully minimizing the total number of required exam periods.</p>
-                        <div class="mt-4">
-                            <span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">NetworkX</span><span class="tech-tag">Graph Theory</span><span class="tech-tag">Algorithm Analysis</span>
-                        </div>
+                    <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
+                        <h4 data-translate="proj5_title" class="font-bold text-lg text-white">Customer Segmentation using RFM Analysis</h4>
+                        <p data-translate="proj5_desc" class="mt-2 text-gray-400">Conducted a detailed analysis of a large transactional dataset to segment customers based on Recency, Frequency, and Monetary (RFM) value. This project delivered actionable insights for developing targeted and effective marketing strategies.</p>
+                        <div class="mt-4"><span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">Jupyter</span></div>
                     </div>
-                    
-<div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
-                        <h4 class="font-bold text-lg text-white">Cloud-Based File Sharing Application</h4>
-                        <p class="mt-2 text-gray-400">Developed a secure file sharing and storage application utilizing Amazon Web Services (AWS). Engineered the backend to manage user authentication, file uploads/downloads, and storage, demonstrating practical knowledge of cloud computing principles.</p>
-                        <div class="mt-4">
-                            <span class="tech-tag">AWS</span><span class="tech-tag">S3</span><span class="tech-tag">EC2</span><span class="tech-tag">Python</span>
-                        </div>
-                    </div>        
+                     <div class="bg-gray-800/50 p-6 rounded-lg shadow-lg hover:shadow-teal-400/20 transition-shadow duration-300">
+                        <h4 data-translate="proj6_title" class="font-bold text-lg text-white">University Exam Scheduling via Graph Coloring</h4>
+                        <p data-translate="proj6_desc" class="mt-2 text-gray-400">Solved a complex course scheduling conflict by modeling student enrollment data as a graph. This project involved applying and benchmarking various graph coloring algorithms to determine the chromatic number, successfully optimizing the exam timetable and minimizing the number of required periods.</p>
+                        <div class="mt-4"><span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">NetworkX</span><span class="tech-tag">Graph Theory</span><span class="tech-tag">Algorithm Analysis</span></div>
+                    </div>
                 </div>
             </section>
-            
-            
-            
-<section id="education" class="fade-in-section">
-                <h3 class="text-lg font-semibold uppercase tracking-wider text-teal-400 mb-4">Education</h3>
+
+            <section id="education" class="fade-in-section">
+                <h3 data-translate="edu_heading" class="text-lg font-semibold uppercase tracking-wider text-teal-400 mb-4">Education</h3>
                 <div class="text-gray-300">
-                    <h4 class="font-bold text-white">Bachelor of Science in Computers and Data Science</h4>
-                    <p class="text-gray-400">Alexandria University, Alexandria, Egypt</p>
-                    <p class="text-gray-400 italic">Expected Graduation: 2026</p>
+                    <h4 data-translate="edu_degree" class="font-bold text-white">Bachelor of Science in Computers and Data Science</h4>
+                    <p data-translate="edu_uni" class="text-gray-400">Alexandria University, Alexandria, Egypt</p>
+                    <p data-translate="edu_grad" class="text-gray-400 italic">Expected Graduation: 2026</p>
                 </div>
             </section>
         </main>
         
-        
-        
-<footer class="text-center mt-20 md:mt-28 text-gray-500 text-sm">
-            <p>&copy; 2025 Ahmed Rashad Fathy. Designed with passion.</p>
+        <footer class="text-center mt-20 md:mt-28 text-gray-500 text-sm">
+            <p data-translate="footer_text">&copy; 2025 Ahmed Rashad Fathy. Designed with passion.</p>
         </footer>
 
     </div>
+    
+    <script>
+        // --- Translations Object ---
+        const translations = {
+            en: {
+                name: "Ahmed Rashad Fathy",
+                title: "Data Scientist & Software Engineer",
+                location: "Based in Alexandria, Egypt. Engineering intelligent solutions with data and code.",
+                about_heading: "About Me",
+                about_p: "A detail-oriented Data Science undergraduate from Alexandria University, I possess hands-on experience across the entire data lifecycle—from web scraping and database management to in-depth analysis and compelling visualization. With a proven ability to develop robust applications using Python, SQL, and NoSQL, I am passionate about leveraging data engineering, machine learning, and cloud computing to solve complex challenges and drive innovation within a forward-thinking team.",
+                soft_skills_heading: "Personal & Professional Skills",
+                soft_skills_subheading: "Soft Skills",
+                ss_1: "Problem-Solving",
+                ss_2: "Teamwork & Collaboration",
+                ss_3: "Effective Communication",
+                ss_4: "Adaptability",
+                languages_subheading: "Languages",
+                lang_1: "Arabic (Native)",
+                lang_2: "English (Professional)",
+                skills_heading: "Technical Skills",
+                skills_lang: "Languages",
+                skills_db: "Databases",
+                skills_ds: "Data Science",
+                skills_tools: "Dev & Tools",
+                projects_heading: "Projects",
+                proj1_title: "Comprehensive Data Analysis and Machine Learning Showcase",
+                proj1_desc: "A multifaceted project demonstrating expertise in financial analysis, predictive healthcare modeling, and NLP. This showcase features a stock market analysis pipeline, a K-Nearest Neighbors model for breast cancer prediction, and a sentiment analysis model for movie reviews, all showcasing end-to-end data science capabilities.",
+                proj2_title: "Cloud-Based File Sharing Application",
+                proj2_desc: "Engineered a secure, scalable file sharing and storage application on Amazon Web Services (AWS). The backend, built to manage user authentication, file transfers, and cloud storage, demonstrates a strong command of cloud architecture and security principles.",
+                proj3_title: "Financial Stock Analysis & Visualization Pipeline",
+                proj3_desc: "Constructed an automated data pipeline to scrape real-time financial stock data. The project involved data cleaning, transformation, and in-depth analysis to uncover market trends, with the processed data stored efficiently in a MongoDB database.",
+                proj4_title: "University Management System with GUI",
+                proj4_desc: "Designed and implemented a comprehensive database system to manage university records. The system features an intuitive Graphical User Interface (GUI) developed in Python, facilitating seamless data entry, querying, and system management.",
+                proj5_title: "Customer Segmentation using RFM Analysis",
+                proj5_desc: "Conducted a detailed analysis of a large transactional dataset to segment customers based on Recency, Frequency, and Monetary (RFM) value. This project delivered actionable insights for developing targeted and effective marketing strategies.",
+                proj6_title: "University Exam Scheduling via Graph Coloring",
+                proj6_desc: "Solved a complex course scheduling conflict by modeling student enrollment data as a graph. This project involved applying and benchmarking various graph coloring algorithms to determine the chromatic number, successfully optimizing the exam timetable and minimizing the number of required periods.",
+                edu_heading: "Education",
+                edu_degree: "Bachelor of Science in Computers and Data Science",
+                edu_uni: "Alexandria University, Alexandria, Egypt",
+                edu_grad: "Expected Graduation: 2026",
+                footer_text: "© 2025 Ahmed Rashad Fathy. Designed with passion."
+            },
+            ar: {
+                name: "أحمد رشاد فتحي",
+                title: "عالم بيانات ومهندس برمجيات",
+                location: "مقيم في الإسكندرية، مصر. أعمل على هندسة حلول ذكية باستخدام البيانات والبرمجة.",
+                about_heading: "عني",
+                about_p: "كطالب جامعي متخصص في علوم البيانات بجامعة الإسكندرية، أتميز بالدقة والاهتمام بالتفاصيل، ولدي خبرة عملية تمتد عبر دورة حياة البيانات بأكملها — من استخلاص البيانات من الويب وإدارة قواعد البيانات، إلى التحليل المعمق والعرض المرئي الجذاب. مع قدرة مثبتة على تطوير تطبيقات قوية باستخدام Python وSQL وNoSQL، أنا شغوف بتسخير هندسة البيانات، والتعلم الآلي، والحوسبة السحابية لمواجهة التحديات المعقدة ودفع عجلة الابتكار ضمن فريق عمل متطلع للمستقبل.",
+                soft_skills_heading: "المهارات الشخصية والمهنية",
+                soft_skills_subheading: "المهارات الشخصية",
+                ss_1: "حل المشكلات",
+                ss_2: "العمل الجماعي والتعاون",
+                ss_3: "التواصل الفعال",
+                ss_4: "القدرة على التكيف",
+                languages_subheading: "اللغات",
+                lang_1: "العربية (اللغة الأم)",
+                lang_2: "الإنجليزية (مستوى احترافي)",
+                skills_heading: "المهارات التقنية",
+                skills_lang: "لغات البرمجة",
+                skills_db: "قواعد البيانات",
+                skills_ds: "علم البيانات",
+                skills_tools: "أدوات التطوير",
+                projects_heading: "المشاريع",
+                proj1_title: "استعراض شامل لتحليل البيانات والتعلم الآلي",
+                proj1_desc: "مشروع متعدد الأوجه يبرز الخبرة في التحليل المالي، والنمذجة التنبؤية في الرعاية الصحية، ومعالجة اللغات الطبيعية. يتضمن هذا العرض خط أنابيب لتحليل سوق الأسهم، ونموذج K-Nearest Neighbors للتنبؤ بسرطان الثدي، ونموذج لتحليل المشاعر لمراجعات الأفلام، وكلها تعرض قدرات شاملة في علم البيانات.",
+                proj2_title: "تطبيق قائم على السحابة لمشاركة الملفات",
+                proj2_desc: "تمت هندسة تطبيق آمن وقابل للتطوير لمشاركة وتخزين الملفات على Amazon Web Services (AWS). الواجهة الخلفية، التي تم بناؤها لإدارة مصادقة المستخدمين ونقل الملفات والتخزين السحابي، تبرهن على إتقان قوي لهيكلة السحابة ومبادئ الأمان.",
+                proj3_title: "خط أنابيب لتحليل وتصور بيانات الأسهم المالية",
+                proj3_desc: "تم بناء خط أنابيب بيانات مؤتمت لاستخلاص بيانات الأسهم المالية في الوقت الفعلي. تضمن المشروع تنظيف البيانات، وتحويلها، وتحليلها بعمق للكشف عن اتجاهات السوق، مع تخزين البيانات المعالجة بكفاءة في قاعدة بيانات MongoDB.",
+                proj4_title: "نظام إدارة جامعي بواجهة رسومية",
+                proj4_desc: "تم تصميم وتنفيذ نظام قاعدة بيانات شامل لإدارة سجلات الجامعة. يتميز النظام بواجهة مستخدم رسومية (GUI) سهلة الاستخدام تم تطويرها بلغة Python، مما يسهل إدخال البيانات والاستعلام عنها وإدارة النظام بسلاسة.",
+                proj5_title: "تقسيم العملاء باستخدام تحليل RFM",
+                proj5_desc: "تم إجراء تحليل مفصل لمجموعة بيانات معاملات كبيرة لتقسيم العملاء بناءً على قيمة الحداثة والتكرار والقيمة النقدية (RFM). قدم هذا المشروع رؤى قابلة للتنفيذ لتطوير استراتيجيات تسويق مستهدفة وفعالة.",
+                proj6_title: "جدولة امتحانات الجامعة عبر تلوين الرسم البياني",
+                proj6_desc: "تم حل مشكلة جدولة معقدة عن طريق نمذجة بيانات تسجيل الطلاب كرسم بياني لتحديد تعارضات الامتحانات. تضمن هذا المشروع تطبيق ومقارنة خوارزميات تلوين الرسم البياني المختلفة لتحديد العدد اللوني، مما أدى إلى تحسين جدول الامتحانات وتقليل عدد الفترات المطلوبة بنجاح.",
+                edu_heading: "التعليم",
+                edu_degree: "بكالوريوس العلوم في الحاسبات وعلوم البيانات",
+                edu_uni: "جامعة الإسكندرية، الإسكندرية، مصر",
+                edu_grad: "التخرج المتوقع: 2026",
+                footer_text: "© 2025 أحمد رشاد فتحي. صُمم بشغف."
+            }
+        };
 
-    
-    
-<script>
+        // --- Combined Page Logic on DOMContentLoaded ---
         document.addEventListener('DOMContentLoaded', function() {
-            const sections = document.querySelectorAll('.fade-in-section');
+            
+            // --- Language Switcher Logic ---
+            const langEnBtn = document.getElementById('lang-en');
+            const langArBtn = document.getElementById('lang-ar');
 
-            const options = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.1
-            };
+            function switchLanguage(lang) {
+                document.documentElement.lang = lang;
+                document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+                langEnBtn.classList.toggle('active', lang === 'en');
+                langArBtn.classList.toggle('active', lang === 'ar');
+                
+                document.querySelectorAll('[data-translate]').forEach(el => {
+                    const key = el.getAttribute('data-translate');
+                    el.textContent = translations[lang][key] || el.textContent;
+                });
+                
+                const header = document.getElementById('main-header');
+                if (lang === 'ar') {
+                    header.classList.remove('md:flex-row');
+                    header.classList.add('md:flex-row-reverse');
+                } else {
+                    header.classList.remove('md:flex-row-reverse');
+                    header.classList.add('md:flex-row');
+                }
+            }
+
+            langEnBtn.addEventListener('click', () => switchLanguage('en'));
+            langArBtn.addEventListener('click', () => switchLanguage('ar'));
+            
+            // Set default language
+            switchLanguage('en');
+
+            // --- Intersection Observer for fade-in animations ---
+            const sections = document.querySelectorAll('.fade-in-section');
+            const options = { root: null, rootMargin: '0px', threshold: 0.1 };
 
             const observer = new IntersectionObserver(function(entries, observer) {
                 entries.forEach(entry => {
@@ -224,11 +303,8 @@
                 });
             }, options);
 
-            sections.forEach(section => {
-                observer.observe(section);
-            });
+            sections.forEach(section => { observer.observe(section); });
         });
     </script>
-
 </body>
 </html>
